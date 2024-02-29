@@ -1,6 +1,1 @@
-(() => {
-  const e = document.createElement("h1");
-  (e.textContent = "Hello There!"),
-    e.classList.add("blur-back"),
-    document.body.appendChild(e);
-})();
+(()=>{"use strict";function e(e){document.querySelector(`#${e}`).classList.toggle("hidden")}const t=document.querySelector("#dd-main-btn"),n=document.querySelector("#dd-another-btn");t.addEventListener("click",(t=>{e("dd-main-items")})),n.addEventListener("click",(t=>{e("dd-another-items")})),window.onclick=function(e){if(!e.target.matches(".dropdown-btn")){let e=document.getElementsByClassName("dropdown-content");for(let t=0;t<e.length;t++)e[t].classList.add("hidden")}}})();
